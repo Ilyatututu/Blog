@@ -12,3 +12,5 @@ class CommentService:
     def create_comment(self, post_id: int, author_id: int, content: str) -> Comment:
         return self.repo.create(Comment(id=0, post_id=post_id, author_id=author_id, content=content))
     
+    def delete_comment(self, comment_id: int) -> bool:
+        return self.repo.delete(comment_id)

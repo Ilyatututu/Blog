@@ -16,6 +16,6 @@ class User:
 class Comment:
     id: int
     post_id: int
-    author_id: int
     content: str
+    author_id: int
     
